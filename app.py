@@ -113,7 +113,7 @@ html, body, [class*="css"] { font-family: 'Segoe UI', sans-serif; }
 # DATA LOADER  (baca langsung dari CSV, tanpa src/)
 # ═══════════════════════════════════════════════════════════════════════════════
 @st.cache_data
-def load_nodes(path="data/nodes.csv"):
+def load_nodes(path="nodes.csv"):
     """
     Kembalikan dict { node_id(str) : { semua kolom } }
     kata_kunci dipecah jadi list.
@@ -127,7 +127,7 @@ def load_nodes(path="data/nodes.csv"):
     return nodes
 
 @st.cache_data
-def load_routes(path="data/routes.csv"):
+def load_routes(path="routes.csv"):
     """
     Kembalikan dict { node_tujuan(str) : { semua kolom } }
     langkah_navigasi dipecah jadi list by " | ".
@@ -141,7 +141,7 @@ def load_routes(path="data/routes.csv"):
     return routes
 
 @st.cache_data
-def load_intents(path="data/intents.csv"):
+def load_intents(path="intents.csv"):
     """
     Kembalikan list of dict, tiap dict = satu intent beserta utterance-nya.
     """
@@ -407,7 +407,7 @@ try:
     routes  = load_routes()
     intents = load_intents()
 except FileNotFoundError as e:
-    st.error(f"❌ File CSV tidak ditemukan: {e}\n\nPastikan folder `data/` berisi nodes.csv, routes.csv, intents.csv")
+    st.error( f"❌ File CSV tidak ditemukan: {e}")
     st.stop()
 
 
@@ -813,10 +813,10 @@ with tab3:
     ### 📁 Struktur Folder
     ```
     campusseek/
-    ├── data/
-    │   ├── nodes.csv
-    │   ├── routes.csv
-    │   └── intents.csv
-    └── app.py
+    
+    nodes.csv
+    routes.csv
+    intents.csv
+    app.py
     ```
     """)
