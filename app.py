@@ -12,6 +12,11 @@ Requirement: pip install streamlit transformers torch
 
 import re, csv, math, heapq
 import streamlit as st
+from transformers import AutoTokenizer
+from transformers import AutoModelForSequenceClassification
+
+import torch
+import pickle
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE CONFIG
@@ -122,6 +127,23 @@ try:
 except FileNotFoundError as e:
     st.error(f"❌ File CSV tidak ditemukan: {e}\n\nPastikan folder `data/` berisi:\n- nodes.csv\n- edges.csv\n- routes.csv\n- intent_dataset.csv")
     st.stop()
+
+#indoBert
+@st.cache_resource
+def load_indobert_model():
+
+    model_path = "model_intent"
+
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+
+    model = AutoModelForSequenceClassification.from_pretrained(model_path)
+
+    with open(f"{model_path}/label_encoder.pkl", "rb") as f:
+        encoder = pickle.load(f)
+
+    return tokenizer, model, encoder
+
+tokenizer_intent, model_intent, label_encoder = load_indobert_model()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -253,29 +275,40 @@ def ner_extract(teks: str) -> dict:
 
 
 # ── Intent Classification ─────────────────────────────────────────────────────
-def classify_intent(teks: str, intents: list) -> dict:
-    """
-    Klasifikasi intent dengan token overlap (baseline rule-based).
-    Upgrade ke IndoBERT di fungsi ini dengan fine-tuning pada intent_dataset.csv.
-    Return: { intent_label, node_target, confidence }
-    """
-    tl         = teks.lower()
-    kata_query = set(re.findall(r"\w+", tl))
-    best       = {"intent_label": "navigasi_ruangan", "node_target": None, "confidence": 0.0}
+def classify_intent(teks, intents=None) -> dict:
+    inputs = tokenizer_intent(
+        teks,
+        return_tensors="pt",
+        truncation=True,
+        padding=True,
+        max_length=64
+    )
 
-    for row in intents:
-        utt   = row["utterance"].lower()
-        kata_utt = set(re.findall(r"\w+", utt))
-        if not kata_utt:
-            continue
-        overlap = len(kata_utt & kata_query) / len(kata_utt)
-        if overlap > best["confidence"]:
-            best = {
-                "intent_label": row["intent_label"],
-                "node_target":  row["node_target"],
-                "confidence":   round(overlap, 2),
-            }
-    return best
+    with torch.no_grad():
+        outputs = model_intent(**inputs)
+
+    probs = torch.softmax(
+        outputs.logits,
+        dim=1
+    )
+
+    confidence, pred_idx = torch.max(
+        probs,
+        dim=1
+    )
+
+    label = label_encoder.inverse_transform(
+        [pred_idx.item()]
+    )[0]
+
+    return {
+        "intent_label": label,
+        "node_target": None,
+        "confidence": round(
+            confidence.item(),
+            2
+        )
+    }
 
 
 # ── Pencarian Node Tujuan ─────────────────────────────────────────────────────
@@ -830,15 +863,5 @@ Input Teks Pengguna
 | `routes.csv` | Panduan arah teks dari lobby ke tiap ruangan |
 | `intent_dataset.csv` | 140 utterance berlabel untuk training intent classifier |
 
----
-### 🚀 Upgrade ke IndoBERT
 
-Ganti fungsi `classify_intent()` di `app.py` dengan:
-```python
-from transformers import pipeline
-classifier = pipeline("text-classification",
-                      model="indobenchmark/indobert-base-p1",
-                      tokenizer="indobenchmark/indobert-base-p1")
-```
-Fine-tune pada `intent_dataset.csv` menggunakan Trainer API HuggingFace.
     """)
