@@ -140,7 +140,7 @@ def load_indobert_model():
     model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
     label_path = hf_hub_download(
-        repo_id=repo_id,
+        repo_id= "triyogaprasetya/campussekk-intent"
         filename="label_encoder.pkl"
     )
 
