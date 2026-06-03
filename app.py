@@ -140,14 +140,14 @@ def load_indobert_model():
     model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
     label_path = hf_hub_download(
-        repo_id= "triyogaprasetya/campussekk-intent"
+        repo_id= "triyogaprasetya/campussekk-intent",
         filename="label_encoder.pkl"
     )
 
     with open(label_path, "rb") as f:
         encoder = pickle.load(f)
 
-    return tokenizer, model
+    return tokenizer, model, encoder
 
 tokenizer_intent, model_intent, label_encoder = load_indobert_model()
 
