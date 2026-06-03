@@ -3,3 +3,4 @@ torch
 transformers
 scikit-learn
 pickle-mixin
+huggingface_hub
