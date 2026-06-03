@@ -1,0 +1,31 @@
+edge_id,from_node,to_node,jarak_meter,tipe_jalur,keterangan
+E001,LOBBY,K1B,10,koridor,Koridor kiri dari lobby
+E002,LOBBY,K1A,15,koridor,Koridor kiri dari lobby pintu kedua
+E003,LOBBY,L1A,20,koridor,Koridor kiri dari lobby pintu ketiga
+E004,LOBBY,T1B,20,koridor,Koridor kanan dari lobby ke pertigaan
+E005,LOBBY,L1C,32,koridor,Koridor kanan belok kiri 12 meter
+E006,LOBBY,DEKAN,5,tangga,Naik tangga depan lobby ke lantai 2
+E007,L1A,L1J,8,koridor,Pertigaan belok kanan 8 meter
+E008,L1J,L1I,4,koridor,Lanjut koridor kanan 4 meter
+E009,L1I,L1G,13,koridor,Lanjut koridor kanan 13 meter
+E010,T1B,L1C,12,koridor,Dari pertigaan belok kiri
+E011,LOBBY,P1A,73,koridor,Koridor kanan 20m - belok kiri 50m - belok kiri 3m
+E012,P1A,P1B,2,koridor,Pintu kedua setelah P1A
+E013,P1B,P1C,2,koridor,Pintu ketiga setelah P1A
+E014,P1C,P1D,30,koridor,Belok kiri 30 meter
+E015,P1D,S1A,5,koridor,Belok kanan 5 meter
+E016,S1A,S1B,3,koridor,Berhadapan di koridor yang sama
+E017,S1A,P1E,10,koridor,Bersebelahan dengan seminar
+E018,P1D,P1E,3,koridor,Bersebelahan
+E019,P1F,P1G,5,koridor,Bersebelahan
+E020,P1C,P1F,40,koridor,Lanjut 40 meter
+E021,LOBBY,L2K,37,tangga,Koridor kiri 20m - belok kanan - naik tangga - belok kiri 15m
+E022,L2K,L2I,15,koridor,Lanjut koridor lantai 2 15 meter
+E023,L2I,L2M,10,koridor,Lanjut koridor 10 meter
+E024,DEKAN,L2M,40,koridor,Dari dekan lanjut koridor
+E025,LOBBY,L3A,30,tangga,Koridor kiri - tangga lt2 - tangga lt3 - belok kanan 7m
+E026,L3A,L3B,2,koridor,Pintu kedua 2 meter
+E027,L3B,R3A,6,koridor,Lurus 6 meter
+E028,LOBBY,R3B,65,tangga,Koridor kiri - tangga lt3 - belok kiri 40m - belok kanan 15m
+E029,K1B,K1A,5,koridor,Bersebelahan
+E030,L2M,R3B,25,koridor,Dari perpustakaan ke aula

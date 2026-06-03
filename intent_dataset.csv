@@ -1,0 +1,141 @@
+intent_id,intent_label,tipe,utterance,node_target
+I001,navigasi_ruangan,navigasi,Di mana ruang perlengkapan?,K1B
+I002,navigasi_ruangan,navigasi,Ruang umum ada di mana?,K1B
+I003,navigasi_ruangan,navigasi,Di mana K1B?,K1B
+I004,navigasi_ruangan,navigasi,Mana ruang logistik?,K1B
+I005,navigasi_ruangan,navigasi,Ruang perlengkapan dan umum di mana?,K1B
+I006,navigasi_ruangan,navigasi,Di mana ruang tata usaha?,K1A
+I007,navigasi_ruangan,navigasi,Kantor TU ada di mana?,K1A
+I008,navigasi_ruangan,navigasi,Di mana ruang administrasi?,K1A
+I009,navigasi_ruangan,navigasi,Ruang koordinator TU di mana?,K1A
+I010,navigasi_ruangan,navigasi,Mau ke tata usaha,K1A
+I011,navigasi_ruangan,navigasi,Di mana lab UTI?,L1A
+I012,navigasi_ruangan,navigasi,Lab sistem informasi ada di mana?,L1A
+I013,navigasi_ruangan,navigasi,Lab jaminan mutu di mana?,L1A
+I014,navigasi_ruangan,navigasi,Di mana Lab Unit Jaminan Mutu?,L1A
+I015,navigasi_ruangan,navigasi,Lab UTI ada di lantai berapa?,L1A
+I016,navigasi_ruangan,navigasi,Di mana lab kimia anorganik?,L1J
+I017,navigasi_ruangan,navigasi,Lab anorganik ada di mana?,L1J
+I018,navigasi_ruangan,navigasi,Ruang L1J di mana?,L1J
+I019,navigasi_ruangan,navigasi,Di mana praktikum kimia anorganik?,L1J
+I020,navigasi_ruangan,navigasi,Lab kimia anorganik lantai berapa?,L1J
+I021,navigasi_ruangan,navigasi,Di mana lab biokimia?,L1I
+I022,navigasi_ruangan,navigasi,Lab bioteknologi ada di mana?,L1I
+I023,navigasi_ruangan,navigasi,Di mana praktikum biokimia?,L1I
+I024,navigasi_ruangan,navigasi,Ruang biokimia dan bioteknologi di mana?,L1I
+I025,navigasi_ruangan,navigasi,Lab L1I ada di mana?,L1I
+I026,navigasi_ruangan,navigasi,Di mana lab kimia fisika?,L1G
+I027,navigasi_ruangan,navigasi,Lab kimfis ada di mana?,L1G
+I028,navigasi_ruangan,navigasi,Di mana praktikum kimia fisika?,L1G
+I029,navigasi_ruangan,navigasi,Ruang kimia fisika di lantai berapa?,L1G
+I030,navigasi_ruangan,navigasi,Lab L1G di mana?,L1G
+I031,cari_toilet,navigasi,Di mana toilet?,T1B
+I032,cari_toilet,navigasi,WC ada di mana?,T1B
+I033,cari_toilet,navigasi,Kamar mandi di mana?,T1B
+I034,cari_toilet,navigasi,Toilet lantai 1 di mana?,T1B
+I035,cari_toilet,navigasi,Di mana bisa ke toilet?,T1B
+I036,navigasi_ruangan,navigasi,Di mana lab kimia organik?,L1C
+I037,navigasi_ruangan,navigasi,Lab organik ada di mana?,L1C
+I038,navigasi_ruangan,navigasi,Di mana praktikum kimia organik?,L1C
+I039,navigasi_ruangan,navigasi,Ruang L1C di mana?,L1C
+I040,navigasi_ruangan,navigasi,Lab kimia organik lantai berapa?,L1C
+I041,cari_kaprodi,navigasi,Di mana ruang kaprodi ilmu komputer?,P1A
+I042,cari_kaprodi,navigasi,Ruang koordinator prodi komputer di mana?,P1A
+I043,cari_kaprodi,navigasi,Kaprodi ilkom ada di mana?,P1A
+I044,cari_kaprodi,navigasi,Di mana ketua prodi ilmu komputer?,P1A
+I045,cari_kaprodi,navigasi,Ruang prodi komputer di mana?,P1A
+I046,cari_kaprodi,navigasi,Di mana ruang kaprodi kimia?,P1B
+I047,cari_kaprodi,navigasi,Ketua jurusan kimia ada di mana?,P1B
+I048,cari_kaprodi,navigasi,Ruang prodi kimia di mana?,P1B
+I049,cari_kaprodi,navigasi,Di mana kaprodi kimia?,P1B
+I050,cari_kaprodi,navigasi,Mau ketemu kaprodi kimia,P1B
+I051,cari_kaprodi,navigasi,Di mana ruang kaprodi statistika?,P1C
+I052,cari_kaprodi,navigasi,Ketua jurusan statistika ada di mana?,P1C
+I053,cari_kaprodi,navigasi,Ruang prodi statistika di mana?,P1C
+I054,cari_kaprodi,navigasi,Di mana kaprodi statistika?,P1C
+I055,cari_kaprodi,navigasi,Mau ke ruang statistika,P1C
+I056,cari_kaprodi,navigasi,Di mana ruang kaprodi biologi?,P1D
+I057,cari_kaprodi,navigasi,Ketua jurusan biologi ada di mana?,P1D
+I058,cari_kaprodi,navigasi,Di mana prodi biologi?,P1D
+I059,cari_kaprodi,navigasi,Ruang kaprodi biologi lantai berapa?,P1D
+I060,cari_kaprodi,navigasi,Mau ke kaprodi biologi,P1D
+I061,cari_kaprodi,navigasi,Di mana ruang kaprodi bioteknologi?,P1E
+I062,cari_kaprodi,navigasi,Ketua jurusan bioteknologi ada di mana?,P1E
+I063,cari_kaprodi,navigasi,Ruang prodi bioteknologi di mana?,P1E
+I064,cari_kaprodi,navigasi,Di mana kaprodi bioteknologi?,P1E
+I065,cari_kaprodi,navigasi,Mau ke kaprodi bioteknologi,P1E
+I066,cari_kaprodi,navigasi,Di mana ruang kaprodi matematika?,P1F
+I067,cari_kaprodi,navigasi,Ketua jurusan matematika ada di mana?,P1F
+I068,cari_kaprodi,navigasi,Ruang prodi matematika di mana?,P1F
+I069,cari_kaprodi,navigasi,Di mana kaprodi matematika?,P1F
+I070,cari_kaprodi,navigasi,Ada mading matematika di mana?,P1F
+I071,cari_kaprodi,navigasi,Di mana ruang kaprodi fisika?,P1G
+I072,cari_kaprodi,navigasi,Ketua jurusan fisika ada di mana?,P1G
+I073,cari_kaprodi,navigasi,Ruang prodi fisika di mana?,P1G
+I074,cari_kaprodi,navigasi,Di mana kaprodi fisika?,P1G
+I075,cari_kaprodi,navigasi,Mau ke kaprodi fisika,P1G
+I076,cari_seminar,navigasi,Di mana ruang seminar kimia?,S1A
+I077,cari_seminar,navigasi,Ruang seminar biologi ada di mana?,S1A
+I078,cari_seminar,navigasi,Di mana ruang sidang kimia?,S1A
+I079,cari_seminar,navigasi,Ruang presentasi kimia biologi di mana?,S1A
+I080,cari_seminar,navigasi,Mau sidang di jurusan kimia,S1A
+I081,cari_seminar,navigasi,Di mana ruang seminar matematika?,S1B
+I082,cari_seminar,navigasi,Ruang seminar fisika ada di mana?,S1B
+I083,cari_seminar,navigasi,Di mana ruang sidang matematika?,S1B
+I084,cari_seminar,navigasi,Ruang presentasi matematika fisika di mana?,S1B
+I085,cari_seminar,navigasi,Mau sidang di jurusan fisika,S1B
+I086,navigasi_ruangan,navigasi,Di mana lab genetika?,L2K
+I087,navigasi_ruangan,navigasi,Lab gen ada di mana?,L2K
+I088,navigasi_ruangan,navigasi,Di mana praktikum genetika?,L2K
+I089,navigasi_ruangan,navigasi,Lab genetika lantai berapa?,L2K
+I090,navigasi_ruangan,navigasi,Ruang L2K di mana?,L2K
+I091,navigasi_ruangan,navigasi,Di mana lab zoologi?,L2I
+I092,navigasi_ruangan,navigasi,Lab hewan ada di mana?,L2I
+I093,navigasi_ruangan,navigasi,Di mana praktikum zoologi?,L2I
+I094,navigasi_ruangan,navigasi,Lab zoologi lantai berapa?,L2I
+I095,navigasi_ruangan,navigasi,Di mana ada tabung hydrat?,L2I
+I096,cari_perpustakaan,navigasi,Di mana perpustakaan?,L2M
+I097,cari_perpustakaan,navigasi,Perpus ada di mana?,L2M
+I098,cari_perpustakaan,navigasi,Library di mana?,L2M
+I099,cari_perpustakaan,navigasi,Di mana bisa pinjam buku?,L2M
+I100,cari_perpustakaan,navigasi,Ruang baca di mana?,L2M
+I101,cari_pimpinan,navigasi,Di mana ruang dekan?,DEKAN
+I102,cari_pimpinan,navigasi,Kantor dekan FMIPA di mana?,DEKAN
+I103,cari_pimpinan,navigasi,Ruang dekan UHO di mana?,DEKAN
+I104,cari_pimpinan,navigasi,Di mana pimpinan FMIPA?,DEKAN
+I105,cari_pimpinan,navigasi,Mau ketemu dekan di mana?,DEKAN
+I106,navigasi_ruangan,navigasi,Di mana lab basis data?,L3A
+I107,navigasi_ruangan,navigasi,Lab database di mana?,L3A
+I108,navigasi_ruangan,navigasi,Lab BD ada di mana?,L3A
+I109,navigasi_ruangan,navigasi,Di mana praktikum basis data?,L3A
+I110,navigasi_ruangan,navigasi,Lab SQL di mana?,L3A
+I111,navigasi_ruangan,navigasi,Di mana lab matematika?,L3B
+I112,navigasi_ruangan,navigasi,Lab math ada di mana?,L3B
+I113,navigasi_ruangan,navigasi,Ruang L3B di mana?,L3B
+I114,navigasi_ruangan,navigasi,Di mana lab komputasi matematika?,L3B
+I115,navigasi_ruangan,navigasi,Lab math lantai berapa?,L3B
+I116,cari_ruang_rapat,navigasi,Di mana ruang rapat senat?,R3A
+I117,cari_ruang_rapat,navigasi,Ruang rapat di mana?,R3A
+I118,cari_ruang_rapat,navigasi,Di mana ruang meeting senat?,R3A
+I119,cari_ruang_rapat,navigasi,Ruang rapat fakultas di mana?,R3A
+I120,cari_ruang_rapat,navigasi,Di mana rapat senat?,R3A
+I121,cari_aula,navigasi,Di mana aula?,R3B
+I122,cari_aula,navigasi,Ruang serbaguna di mana?,R3B
+I123,cari_aula,navigasi,Aula gedung A di mana?,R3B
+I124,cari_aula,navigasi,Di mana ruang untuk acara besar?,R3B
+I125,cari_aula,navigasi,Ruang dengan pintu putih di mana?,R3B
+I126,info_gedung,informasi,Gedung A itu gedung apa?,LOBBY
+I127,info_gedung,informasi,Informasi gedung A?,LOBBY
+I128,info_gedung,informasi,Apa fungsi gedung A?,LOBBY
+I129,info_gedung,informasi,Gedung A ada berapa lantai?,LOBBY
+I130,info_gedung,informasi,Fasilitas apa yang ada di gedung A?,LOBBY
+I131,info_lantai,informasi,Ada ruangan apa saja di lantai 1?,LOBBY
+I132,info_lantai,informasi,Lantai 2 ada apa saja?,LOBBY
+I133,info_lantai,informasi,Ruangan apa yang ada di lantai 3?,LOBBY
+I134,info_lab,informasi,Ada lab apa saja di gedung A?,LOBBY
+I135,info_lab,informasi,Laboratorium apa yang tersedia?,LOBBY
+I136,greeting,lainnya,Halo,LOBBY
+I137,greeting,lainnya,Hai selamat datang,LOBBY
+I138,greeting,lainnya,Assalamualaikum,LOBBY
+I139,greeting,lainnya,Permisi mau tanya,LOBBY
+I140,greeting,lainnya,Selamat pagi,LOBBY

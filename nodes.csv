@@ -1,0 +1,27 @@
+node_id,nama_ruangan,kode,lantai,tipe,deskripsi,kata_kunci,gedung,x,y
+LOBBY,Lobby Utama Gedung A,LOBBY,1,lobby,Titik masuk utama Gedung A FMIPA UHO,"lobby,pintu masuk,entrance,masuk,lobi,pintu depan,titik awal",Gedung A,0,0
+K1B,Ruang Perlengkapan dan Umum,K1B,1,kantor,Penyimpanan dan pengelolaan perlengkapan kampus,"perlengkapan,umum,logistik,barang,gudang,K1B",Gedung A,10,0
+K1A,Ruang Koordinator Tata Usaha,K1A,1,kantor,Pusat administrasi dan tata usaha fakultas,"tata usaha,administrasi,surat,TU,koordinator,K1A",Gedung A,15,0
+L1A,Ruang Laboratorium Unit Jaminan Mutu dan Sistem Informasi (UTI),L1A,1,laboratorium,Lab praktikum sistem informasi dan jaminan mutu,"UTI,jaminan mutu,sistem informasi,lab komputer,UJMSI,L1A,lab UTI",Gedung A,20,0
+L1J,Ruang Laboratorium Kimia Anorganik,L1J,1,laboratorium,Lab praktikum kimia anorganik,"kimia anorganik,anorganik,lab kimia,L1J,kimia",Gedung A,20,8
+L1I,Ruang Laboratorium Biokimia dan Bioteknologi,L1I,1,laboratorium,Lab praktikum biokimia dan bioteknologi,"biokimia,bioteknologi,lab bio,biologi kimia,L1I",Gedung A,20,12
+L1G,Ruang Laboratorium Kimia-Fisika,L1G,1,laboratorium,Lab praktikum kimia fisika,"kimia fisika,kimfis,lab kimia fisika,L1G",Gedung A,20,25
+T1B,Toilet,T1B,1,toilet,Fasilitas sanitasi lantai 1,"toilet,kamar mandi,WC,sanitasi,T1B",Gedung A,20,-5
+L1C,Ruang Laboratorium Kimia Organik,L1C,1,laboratorium,Lab praktikum kimia organik,"kimia organik,organik,lab kimia organik,L1C",Gedung A,32,-8
+P1A,Ruang Koordinator Program Studi Ilmu Komputer,P1A,1,kantor,Administrasi dan koordinasi program studi ilmu komputer,"kaprodi,ilmu komputer,komputer,prodi komputer,koordinator komputer,P1A",Gedung A,70,3
+P1B,Ruang Ketua Jurusan/Program Studi Kimia,P1B,1,kantor,Administrasi dan koordinasi program studi kimia,"kaprodi,kimia,prodi kimia,ketua jurusan kimia,P1B",Gedung A,70,5
+P1C,Ruang Ketua Jurusan/Program Studi S1 Statistika,P1C,1,kantor,Administrasi dan koordinasi program studi statistika,"kaprodi,statistika,prodi statistika,ketua jurusan statistika,P1C",Gedung A,70,7
+P1D,Ruang Ketua Jurusan/Program Studi Biologi,P1D,1,kantor,Administrasi dan koordinasi program studi biologi,"kaprodi,biologi,prodi biologi,ketua jurusan biologi,P1D",Gedung A,80,30
+P1E,Ruang Ketua Jurusan/Program Studi Bioteknologi,P1E,1,kantor,Administrasi dan koordinasi program studi bioteknologi,"kaprodi,bioteknologi,prodi bioteknologi,ketua jurusan bioteknologi,P1E",Gedung A,80,30
+P1F,Ruang Ketua Jurusan/Program Studi Matematika,P1F,1,kantor,Administrasi dan koordinasi program studi matematika,"kaprodi,matematika,prodi matematika,ketua jurusan matematika,mading matematika,P1F",Gedung A,90,40
+P1G,Ruang Ketua Jurusan/Program Studi Fisika,P1G,1,kantor,Administrasi dan koordinasi program studi fisika,"kaprodi,fisika,prodi fisika,ketua jurusan fisika,P1G",Gedung A,95,40
+S1A,Ruang Seminar Jurusan (Kimia-Biologi),S1A,1,ruang seminar,Ruang seminar untuk jurusan kimia dan biologi,"seminar,kimia,biologi,presentasi,sidang,seminar kimia,seminar biologi,S1A",Gedung A,80,25
+S1B,Ruang Seminar Jurusan (Matematika-Fisika),S1B,1,ruang seminar,Ruang seminar untuk jurusan matematika dan fisika,"seminar,matematika,fisika,presentasi,sidang,seminar matematika,seminar fisika,S1B",Gedung A,80,25
+L2K,Ruang Laboratorium Genetika,L2K,2,laboratorium,Lab praktikum genetika,"genetika,gen,lab genetika,biologi molekuler,L2K",Gedung A,15,2
+L2I,Ruang Laboratorium Zoologi,L2I,2,laboratorium,Lab praktikum zoologi hewan,"zoologi,hewan,fauna,lab zoologi,hydrat,L2I",Gedung A,15,30
+L2M,Perpustakaan,L2M,2,perpustakaan,Fasilitas literasi dan referensi akademik,"perpustakaan,pustaka,buku,literasi,referensi,library,L2M",Gedung A,15,40
+DEKAN,Ruang Dekan FMIPA UHO,DEKAN,2,kantor,Ruang pimpinan Dekan FMIPA UHO,"dekan,FMIPA,pimpinan,rektor,pot bunga,dekan FMIPA",Gedung A,2,2
+L3A,Ruang Laboratorium Basis Data,L3A,3,laboratorium,Lab praktikum basis data dan SQL,"basis data,database,SQL,lab komputer,lab BD,L3A,basis data",Gedung A,7,3
+L3B,Ruang Laboratorium Math,L3B,3,laboratorium,Lab praktikum matematika komputasi,"lab math,matematika,komputasi,lab matematika,L3B",Gedung A,7,9
+R3A,Ruang Rapat Senat,R3A,3,ruang rapat,Ruang rapat senat fakultas,"rapat,senat,meeting,rapat fakultas,R3A",Gedung A,7,15
+R3B,Ruang Aula,R3B,3,aula,Ruang serbaguna untuk kegiatan besar,"aula,serbaguna,kegiatan,acara,seminar besar,pintu putih,R3B",Gedung A,40,3
