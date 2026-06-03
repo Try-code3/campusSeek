@@ -132,16 +132,21 @@ except FileNotFoundError as e:
 @st.cache_resource
 def load_indobert_model():
 
-    model_path = "model_intent"
+    model_path = "triyogaprasetya/campussekk-intent"
 
     tokenizer = AutoTokenizer.from_pretrained(model_path)
 
     model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
-    with open(f"{model_path}/label_encoder.pkl", "rb") as f:
+    label_path = hf_hub_download(
+        repo_id=repo_id,
+        filename="label_encoder.pkl"
+    )
+
+    with open(label_path, "rb") as f:
         encoder = pickle.load(f)
 
-    return tokenizer, model, encoder
+    return tokenizer, model
 
 tokenizer_intent, model_intent, label_encoder = load_indobert_model()
 
