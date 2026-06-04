@@ -763,7 +763,7 @@ if query and (cari or query != st.session_state._last_query):
     })
 
     st.markdown("---")
-    st.caption("✨ CampusSeek | NLP Rule-based (upgrade ke IndoBERT) · A-Star Pathfinding")
+    
 
 
 # ══════════════════════════════════════════════════════════════════════════════
