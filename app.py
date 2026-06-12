@@ -204,7 +204,7 @@ def astar(start: str, goal: str, graph: dict, nodes: dict):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# NLP PIPELINE  (Rule-based sebagai baseline, siap di-upgrade IndoBERT)
+# 
 # ══════════════════════════════════════════════════════════════════════════════
 
 # ── NER: Ekstraksi Entitas ────────────────────────────────────────────────────
